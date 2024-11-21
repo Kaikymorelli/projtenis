@@ -9,7 +9,7 @@
         <p>{{ product.description }}</p>
         <div class="div1">
           <p>{{ product.price | currency: 'BRL' }}</p>
-          <button>Add to Cart</button>
+            <button (click)="changeColor()" [ngStyle]="{'background-color': buttonColor}">Add to Cart</button>
         </div>
       </li>
     </ul>

@@ -18,6 +18,13 @@ export class CardsComponent implements OnInit{
     ngOnInit(): void {
       this.products = this.productsService.getProducts();
     }
+    mensagem: string = 'nenhuma ação realizada ainda';
+    buttonColor= '#FF6452';
+    changeColor(): void {
+      this.mensagem = 'Botao clicando! A função foi chamada com sucesso';
+      console.log('Função chamada ao clicar no Botão');
+      this.buttonColor = 'red';
+    }
 
 }
 
